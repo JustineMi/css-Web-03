@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    width: 1440px;
+    height: 1024px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+Section .headerSection {
+    width: 1440px;
+    min-height: auto;
+    background-color: #ffffff;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.flexHeader {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin: 0 auto;
+}
+
+.menu {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.logoHeader img{
+    width: 65px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.hero-content h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.button{
+    display: inline-block;
+    background-color: rgb(255, 76, 76);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero-image img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.news{
+    background-color: #030039;
+    color: #fff;
+    width: 350px;
+    height: 511px;
+    margin-top: -10px;
+    margin-left: 800px;
+}
+
+.news .section-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.news-item{
+    margin-bottom: 20px;
+}
+
+.news-item h3{
+    font-size: 18px;
+}
+
+.news-item p {
+    font-size: 14px;
+}
+
+.articles{
+    display: flex;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.article{
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.article h3{
+    font-size: 48px;
+    color: rgb(132, 132, 132);
+}
+
+.article h4{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+@media(max-width: 768px){
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    .articles{
+        flex-direction: column;
+    }
+}
